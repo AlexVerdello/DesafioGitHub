@@ -1,0 +1,6 @@
+Vista escritorio: https://wireframe.cc/iWXlJx
+Vista mobile: https://wireframe.cc/Hhoi7f
+
+Mi idea es que sea todo en una sola pagina, pero para el entregable hice en 5 archivos diferentes
+
+07/06/22: Ya la hice en forma de landing, se le agrego CSS con diferentes selectores y etiquetas para la entrega

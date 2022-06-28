@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="https://kit.fontawesome.com/3f9a10f0e1.js" crossorigin="anonymous"></script>
+    <title>DentalLab</title>
+</head>
+<body>
+    <header>
+        <nav class="menu-pc">
+            <a href="../index.html"><img src="../img/dentallablogo.png" alt=""></a>
+            <ul class="menu-pc__botonera">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="trabajos.html">Trabajos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>        
+        </nav>
+    </header>
+<main>
+    <section class="pedidos wow fadeIn" id="pedidos">
+        <div class="pedidos__titulo"><h2 class="hache2">Hacenos tu pedido</h2></div>            
+        <div class="pedidos__formulario">
+            <form action="">
+                <fieldset>
+                    <legend>Pedido</legend>
+                    <span>Forma de envio:</span><br>
+                    <label for="domicilio">Que me llegue a casa!</label>
+                    <input type="radio" name="pedido" id="domicilio" value="">
+                    <label for="retiro">Lo busco yo!</label>
+                    <input type="radio" name="pedido" id="retiro" value=""><br><br>
+                    <label for="productos">Selecciona tu producto:</label>
+                    <select name="productos" id="productos">
+                        <option value="m1">Material 1</option>
+                        <option value="m2">Material 2</option>
+                        <option value="m3">Material 3</option>
+                    </select>
+    
+                </fieldset>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="" id="name" placeholder="Ingrese su Nombre">
+    
+                    <label for="email">Email:</label>
+                    <input type="email" name="" id="email" placeholder="Ingrese su Email">
+                    <br>
+                    <br>
+    
+                    <label for="pedido">Pedido:</label><br>
+                    <textarea name="" id="pedido" placeholder="Ingrese su pedido"></textarea>
+                    <br>
+                    <br>                        
+                </fieldset>
+                <input type="reset" value="Limpiar pedido">
+                <input type="submit" value="Hacer pedido">
+            </form>
+        </div>
+    </section>        <!-- Fin de Pedidos -->
+</main>
+<footer class="pie">
+    <div class="contacto">
+        <p>Contactanos</p>
+        <ul>
+            <li>Tel: 123456789</li>
+            <li>E-Mail: <a href="mailto:">usuario@usuario.com</a></li>
+            <li>Dir: calle falsa 123</li>
+    </ul>
+    </div>
+    <div class="redes">
+        <ul>
+            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    </div>
+    <div class="ubicacion">
+        <p>Ubicanos:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.7042079734733!2d-58.40096858438809!3d-34.8133828761297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd36642c4574b%3A0x7a935147e51cea5d!2sAv.%20Hip%C3%B3lito%20Yrigoyen%2013627%2C%20B1846%20Adrogu%C3%A9%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653941503221!5m2!1ses!2sar" width="80%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+<script src="../js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+</body>
+</html>
