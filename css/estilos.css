@@ -34,6 +34,7 @@ header{
     height: 10vh;
     top: 0;
     opacity: 1;
+    z-index: 1;
 }
 
 .menu-pc{
@@ -150,18 +151,13 @@ header{
 .productos .productos__lista h2{
     margin-left: 100px;
 }
-.productos .productos__banner{
-    display:flex;
+ .productos .productos__banner{
+  /*  display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:center;*/
     grid-area: banner;
-}
-.productos__banner img{
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    box-shadow: 5px 5px 13px -1px var(--main-color);
-    width: 80%;
-}
+} 
+
 .productos__imagenes{
     display: flex;
     justify-content: space-around;
@@ -240,34 +236,41 @@ header{
     background: linear-gradient(90deg, rgba(255,255,255,1) 50%, var(--azul) 100%);
     color: var(--texto-blanco);
     display: flex;
-    flex-direction: column;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
     padding: 30px
 }
-.pedidos .pedidos__formulario{
+.pedidosCol1{
+    width: 30%;
+    box-sizing: border-box;
+}
+.pedidosCol2{
+    width: 70%;
+    z-index: 0;
+}
+.pedidos__formulario{
     display:flex;
     justify-content: center;    
     color: #000000;
-    font-size: 1em;    
+    font-size: 0.8em;    
     padding: 20px;
-    /* height: 70%; */
+    height: 70%;
     width: 100%;
 }
-.pedidos .pedidos__formulario fieldset {
+.pedidos__formulario fieldset {
     background-color:aliceblue;
     /* margin-top:10px; */
     padding: 20px;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1em;
     color: var(--azul);
 }
-.pedidos .pedidos__formulario fieldset legend{
+.pedidos__formulario fieldset legend{
     background-color: aliceblue;
     color: var(--main-color);
     font-weight: 600;
 }
-.pedidos .pedidos__formulario input[type= submit], input[type= reset]{
+.pedidos__formulario input[type= submit], input[type= reset]{
     width: 30%;
     height: 30px;
     margin-top: 30px;
@@ -275,13 +278,13 @@ header{
     border-radius: 10px;
     align-items: center;
 }
-.pedidos .pedidos__formulario input[type= submit]:hover, input[type= reset]:hover{
+.pedidos__formulario input[type= submit]:hover, input[type= reset]:hover{
     background: var(--azul);
     color: var(--blanco);
     cursor: pointer;
 }
 
-.pedidos .pedidos__titulo h2{
+.pedidos__titulo h2{
     color: var(--main-color)
 }
 /* Fin estilos Pedidos */
